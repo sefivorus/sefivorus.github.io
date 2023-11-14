@@ -213,23 +213,19 @@ a.active {
   background: var(--bg-color);
 }
 
-.services-content {
-  margin-left: 10px;
-}
-
 .services-list {
   display: grid;
   text-align: start;
   align-items: baseline;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  padding: 80px 45px;
-  gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  padding: 80px 50px;
+  gap: 2rem;
 }
 
 .services-list div {
   background-color: var(--bg-color);
   box-shadow: 0 0 2rem var(--main-color);
-  padding: 2px;
+  padding: 10px;
   border-radius: 10px;
   transition: background 0.3s, transform 0.5s;
   border: 2px solid var(--main-color);
@@ -269,10 +265,10 @@ a.active {
 .portfolio-list {
   display: grid;
   align-items: baseline;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   margin-top: 1px;
   padding: 80px 45px;
-  gap: 5rem;
+  gap: 2rem;
   margin-bottom: 3rem;
 }
 
@@ -467,7 +463,7 @@ a.active {
   /* Services Section */
   .services-list {
     display: grid;
-    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    grid-template-columns: repeat(1, minmax(40vw, 1fr));
     gap: 2rem;
   }
 
@@ -484,7 +480,7 @@ a.active {
 
   .services-content p {
     text-align: center;
-    font-size: 5px;
+    font-size: 10px;
   }
 
 
