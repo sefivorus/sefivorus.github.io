@@ -39,10 +39,10 @@ ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
 ScrollReveal().reveal(".home-img", { origin: "bottom" });
 
 document.getElementById("HBtn").addEventListener("click", function () {
-  swal("L O V E - Z A Z A", "Ψ(≧ω≦)Ψ")
+  swal("Ultraman Z", "Delta Raise Claw")
 });
 document.getElementById("ABtn").addEventListener("click", function () {
-  swal("L O V E - Z A Z A", "Ψ(≧ω≦)Ψ")
+  swal("Ultraman Z", "Delta Raise Claw")
 });
 
 const counters = document.querySelectorAll('.counter');
