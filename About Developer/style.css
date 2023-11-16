@@ -217,7 +217,7 @@ a.active {
   display: grid;
   text-align: start;
   align-items: baseline;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(3,auto-fit, minmax(20rem, 1fr));
   padding: 80px 50px;
   gap: 2rem;
 }
@@ -265,7 +265,7 @@ a.active {
 .portfolio-list {
   display: grid;
   align-items: baseline;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(2,auto-fit, minmax(25rem, 1fr));
   margin-top: 1px;
   padding: 80px 45px;
   gap: 2rem;
