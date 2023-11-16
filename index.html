@@ -503,24 +503,7 @@
         time: 1000
       });
     });
-
-
-function animateCounter(start, end, duration) {
-  let current = start;
-  let increment = end > start ? 1 : -1;
-  let stepTime = Math.abs(Math.floor(duration / (end - start)));
-  let obj = document.getElementById("counter");
-  let timer = setInterval(function() {
-    current += increment;
-    obj.innerHTML = current;
-    if (current == end) {
-      clearInterval(timer);
-    }
-  }, stepTime);
-}
-
-animateCounter(0, 100, 1000);
-
+    
     // Main Navigation
     var menuToggle = document.getElementById('menu-toggle');
     var mainNav = document.querySelector('.main-nav');
