@@ -54,7 +54,7 @@
             <h1><span>11-5</span><br>For us</h1>
             <h3>Simple</h3>
             <p>Website</p>
-            <a href="#" class="btn btn-lg btn-primary">Know More</a>
+            <a href="https://www.instagram.com/sefiveforus/" class="btn btn-lg btn-primary" target="_blank">Know More</a>
             <ul class="social-links">
               <li class="label">Presented by</li><br>
               <li><a href="#"><img src="assets/behance.png"></a></li>
@@ -104,8 +104,14 @@
               <div class="swiper-slide client-box">
                 <img src="./assets 2/bendahara.png" class="client-logo">
                 <h3 class="text-left title">Annisa Nur</h3>
-                <p class="text-left tag">Bendahara</p>
+                <p class="text-left tag">Bendahara 1</p>
                 <p class="text-left"><a href="#case-study" id="Annisa">Know More &#8594;</a></p>
+              </div>
+              <div class="swiper-slide client-box">
+                <img src="./assets 2/anggota.png" class="client-logo">
+                <h3 class="text-left title">Nicholas Winandi</h3>
+                <p class="text-left tag">Bendahara 2</p>
+                <p class="text-left"><a href="#case-study" id="Nicholas">Know More &#8594;</a></p>
               </div>
               <div class="swiper-slide client-box">
                 <img src="./assets 2/web developer.png" class="client-logo">
@@ -217,15 +223,9 @@
               </div>
               <div class="swiper-slide client-box">
                 <img src="./assets 2/anggota.png" class="client-logo">
-                <h3 class="text-left title">Nicholas Winandi</h3>
-                <p class="text-left tag">Anggota</p>
-                <p class="text-left"><a href="#case-study" id="Nicholas">Know More &#8594;</a></p>
-              </div>
-              <div class="swiper-slide client-box">
-                <img src="./assets 2/anggota.png" class="client-logo">
                 <h3 class="text-left title">Nurita Az-Zahra</h3>
                 <p class="text-left tag">Anggota</p>
-                <p class="text-left"><a href="#case-study" id="Nurita">Know More &#8594;</a></p>
+                <p class="text-left"><a href="kamu lucu.html" id="Nurita">Know More &#8594;</a></p>
               </div>
               <div class="swiper-slide client-box">
                 <img src="./assets 2/anggota.png" class="client-logo">
@@ -249,7 +249,7 @@
                 <img src="./assets 2/anggota.png" class="client-logo">
                 <h3 class="text-left title">Rafi Zaidan</h3>
                 <p class="text-left tag">Anggota</p>
-                <p class="text-left"><a href="#case-study" id="Rafi">Know More &#8594;</a></p>
+                <p class="text-left"><a href="#case-study" id="Raidan">Know More &#8594;</a></p>
               </div>
               <div class="swiper-slide client-box">
                 <img src="./assets 2/anggota.png" class="client-logo">
@@ -438,7 +438,7 @@
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <!-- Initialize Client Swiper -->
   <script>
-    var swiper1 = new Swiper('.client-swiper', {
+    let swiper1 = new Swiper('.client-swiper', {
       slidesPerView: 3,
       paginationClickable: true,
       nextButton: '.swiper-button-next',
@@ -465,7 +465,7 @@
       }
     });
     // Initialize Testimonial Swiper
-    var swiper2 = new Swiper('.testimonial-swiper', {
+    let swiper2 = new Swiper('.testimonial-swiper', {
       slidesPerView: 3,
       pagination: '.swiper-pagination',
       paginationClickable: true,
@@ -492,42 +492,25 @@
     });
   </script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="js/jquery.counterup.min.js"></script>
   <script>
     // Counterup
-    $('.counter').counterUp({
-      time: 1000
-    });
-
-    // Main Navigation
-    $('#menu-toggle').click(function () {
-      $(this).toggleClass('open'),
-        $('.main-nav').toggleClass('show-it');
-    })
-  </script>
-
-  <!-- Developer Popup -->
-  <script>
-    document.getElementById('Fathih').addEventListener('click', function () {
-      swal({
-        buttons: {
-          cancel: "Tidak Sekarang",
-          confirm: "Kunjungi Personal Website",
-        },
-        content: {
-          element: "img",
-          attributes: {
-            src: "./popup/Fathih.png", // Ganti dengan URL gambar Anda
-            style: "max-width: 300px;"
-          },
-        },
-      }).then((value) => {
-        if (value) {
-        window.open("./About Developer/index.html", "_blank");
-        }
+    $(document).ready(function () {
+      // Call the counterUp function for each counter element
+      $('.counter').counterUp({
+        time: 1000
       });
     });
 
+    // Main Navigation
+    var menuToggle = document.getElementById('menu-toggle');
+    var mainNav = document.querySelector('.main-nav');
+
+    menuToggle.addEventListener('click', function () {
+      menuToggle.classList.toggle('open');
+      mainNav.classList.toggle('show-it');
+    });
   </script>
 </body>
 
