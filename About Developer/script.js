@@ -38,35 +38,36 @@ ScrollReveal({
 ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
 ScrollReveal().reveal(".home-img", { origin: "bottom" });
 
-document.getElementById("HBtn").addEventListener("click", function () {
+document.getElementById('HBtn').addEventListener('click', function () {
   swal({
     title: "My Project",
-    text: "Click the link below:",
-    content: {
-      element: "a",
-      attributes: {
-        href: "https://sefivorus.github.io/", 
-        target: "_blank", 
-      },
-      text: "Visit https://sefivorus.github.io/", 
+    text: "click the link confirm button",
+    buttons: {
+      cancel: "Tidak Sekarang",
+      confirm: "My Project",
     },
+  }).then((value) => {
+    if (value) {
+      window.open("https://sefivorus.github.io/", "_blank");
+    }
   });
 });
 
-document.getElementById("HBtn").addEventListener("click", function () {
+document.getElementById('ABtn').addEventListener('click', function () {
   swal({
     title: "My Project",
-    text: "Click the link below:",
-    content: {
-      element: "a",
-      attributes: {
-        href: "https://inti-nusantara.com/", 
-        target: "_blank", 
-      },
-      text: "Visit https://inti-nusantara.com/", 
+    text: "click the confirm button",
+    buttons: {
+      cancel: "Tidak Sekarang",
+      confirm: "My Project",
     },
+  }).then((value) => {
+    if (value) {
+      window.open("https://inti-nusantara.com/", "_blank");
+    }
   });
 });
+
 
 const counters = document.querySelectorAll('.counter');
 let portfolioVisible = false; // Tambahkan variabel untuk melacak apakah halaman ID "portfolio" terlihat
