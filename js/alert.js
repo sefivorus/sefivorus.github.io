@@ -65,7 +65,7 @@ document.getElementById('Fathih').addEventListener('click', function () {
     },
   }).then((value) => {
     if (value) {
-      window.open("./About Developer/index.html", "_blank");
+      window.open("https://patzypazty.github.io/Fathih-Apriandi/#home", "_blank");
     }
   });
 });
