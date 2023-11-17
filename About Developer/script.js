@@ -39,10 +39,33 @@ ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
 ScrollReveal().reveal(".home-img", { origin: "bottom" });
 
 document.getElementById("HBtn").addEventListener("click", function () {
-  swal("Ultraman Z", "Delta Raise Claw")
+  swal({
+    title: "My Project",
+    text: "Click the link below:",
+    content: {
+      element: "a",
+      attributes: {
+        href: "https://sefivorus.github.io/", 
+        target: "_blank", 
+      },
+      text: "Visit https://sefivorus.github.io/", 
+    },
+  });
 });
-document.getElementById("ABtn").addEventListener("click", function () {
-  swal("Ultraman Z", "Delta Raise Claw")
+
+document.getElementById("HBtn").addEventListener("click", function () {
+  swal({
+    title: "My Project",
+    text: "Click the link below:",
+    content: {
+      element: "a",
+      attributes: {
+        href: "https://inti-nusantara.com/", 
+        target: "_blank", 
+      },
+      text: "Visit https://inti-nusantara.com/", 
+    },
+  });
 });
 
 const counters = document.querySelectorAll('.counter');
